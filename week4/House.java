@@ -6,6 +6,7 @@ public class House
     private double numBathrooms;
     private int numPools;
     private String address;
+    private int closet;
 
     public House()
     {
@@ -15,6 +16,7 @@ public class House
         numBathrooms = 5.5;
         numPools = 3;
         address = 12345 Jacksonville Drive;
+        closet = 7;
     }
 
     public String toString()
