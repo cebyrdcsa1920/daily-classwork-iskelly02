@@ -17,6 +17,15 @@ public class TempConverter
         }
     }
 
+    public void convertToC()
+    {
+        if(!isCelsius)
+        {
+            temperature = (temperature - 32) * 5 / 9;
+            isCelsius = true;
+        }
+    }
+
     public String toString()
     {
         String result = "The current temperature is " + temperature + " degrees";
@@ -29,5 +38,15 @@ public class TempConverter
             result += " Fahrenheit";
         }
         return result;
+    }
+
+    public static void main(String[] args)
+    {
+        TempConverter myTemp = new TempConverter(26.5);
+        System.out.println(myTemp);
+        myTemp.convertToF();
+        System.out.println(myTemp);
+        myTemp.convertToC();
+        System.out.println(myTemp);
     }
 }
