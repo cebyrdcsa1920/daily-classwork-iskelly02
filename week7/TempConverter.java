@@ -16,6 +16,7 @@ public class TempConverter
         if (isCelsius)
         {
             temperature = temperature * 9 / 5 + 32;
+            isCelsius = false;
         }
     }
 
@@ -55,6 +56,11 @@ public class TempConverter
         System.out.println("Enter a temperature in Celsius: ");
         double input = kboard.nextDouble();
         kboard.nextLine();
-        System.out.println(input);
+        TempConverter myTemp = new TempConverter(input);
+        System.out.println(myTemp);
+        myTemp.convertToF();
+        System.out.println(myTemp);
+        myTemp.convertToC();
+        System.out.println(myTemp);
     }
 }
