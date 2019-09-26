@@ -30,7 +30,7 @@ public class Pet
      {
          this.species = species;
          this.color = color;
-         this.numOfPets = numOfPets;
+         this.numOfPets = numOfPets
          this.weight = weight;
 
      }
